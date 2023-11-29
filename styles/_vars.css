@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+:root {
+	--background: #F7F9FD;
+	--red: #EE4545;
+	--red-hover: #e3023a;
+	--ubuntu: 'Ubuntu', sans-serif;
+	--anonymous: 'Anonymous Pro', monospace;
+}

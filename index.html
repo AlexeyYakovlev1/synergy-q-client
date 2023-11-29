@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Synergy AI</title>
+	<link rel="stylesheet" href="../styles/home.css">
+</head>
+
+<body>
+	<button class="logout user-do__btn">Выйти</button>
+	<span class="loader-center hidden"></span>
+	<div class="alert">
+		<header class="alert__header">
+			<span class="alert__title"></span>
+			<span class="alert__close">&#10006;</span>
+		</header>
+		<p class="alert__text"></p>
+	</div>
+	<div class="content">
+		<div>
+			<header class="content__header">
+				<img src="./assets/logo.svg" class="logo" alt="logo">
+				<div class="content__header-right">
+					<div class="faculty-custom-select">
+						<div class="faculty-select-selected">
+							<span>Выберите факультет</span>
+							<img class="faculty-select-arrow" src="./assets/select-arrow.svg" alt="стрелка">
+						</div>
+						<div class="faculty-select-options hidden"></div>
+					</div>
+					<div class="disc-custom-select hidden">
+						<div class="disc-select-selected">
+							<span>Выберите дисциплину</span>
+							<img class="disc-select-arrow" src="./assets/select-arrow.svg" alt="стрелка">
+						</div>
+						<div class="disc-select-options hidden"></div>
+					</div>
+				</div>
+			</header>
+			<div class="wrapper">
+				<ul id="listOfAnswers"></ul>
+			</div>
+		</div>
+		<div class="user__answer hidden">
+			<p class="user__answer-description"></p>
+			<div class="user__answer-form"></div>
+			<button class="user__answer-finish">Ответить</button>
+		</div>
+		<div class="user-do">
+			<button class="user-do__btn" id="button-nextQuestion">Создать один вопрос по дисциплине</button>
+			<button class="user-do__btn" id="button-generate-questions">Создать вопросы для одной сессии</button>
+			<button class="user-do__btn" id="button-upload-to-excel">Выгрузить вопросы в excel</button>
+
+			<button class="user-do__btn button-up hidden" title="Вернуться к первому сообщению">
+				<img src="./assets/arrow-up.svg" alt="Вернуться к первому сообщению">
+			</button>
+			<button class="user-do__btn button-clear hidden" title="Очистить чат">
+				<img src="./assets/clear.svg" alt="Очистить чат">
+			</button>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<script src="./node_modules/js-cookie/dist/js.cookie.js"></script>
+	<script src="./intelligence.js" type="module"></script>
+	<script src="./auth/checkAuth.js" type="module"></script>
+</body>
+
+</html>

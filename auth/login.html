@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Вход</title>
+	<link rel="stylesheet" href="../styles/auth.css" />
+</head>
+<body>
+	<div class="developed">
+		<p></p>
+	</div>
+	<span class="loader-center hidden"></span>
+	<div class="alert">
+		<header class="alert__header">
+			<span class="alert__title"></span>
+			<span class="alert__close">&#10006;</span>
+		</header>
+		<p class="alert__text"></p>
+	</div>
+	<div class="login">
+		<h2 class="login__title">С возвращением</h2>
+		<form class="form">
+			<label class="form__login">
+				<span>Имя пользователя</span>
+				<input name="username" class="form__input" type="text" placeholder="Логин" />
+			</label>
+			<label class="form__login">
+				<span>Пароль</span>
+				<input name="password" class="form__input" type="password" placeholder="Пароль" />
+			</label>
+
+			<button class="form__submit" type="submit">Войти</button>
+		</form>
+	</div>
+
+	<script src="./auth.js" type="module"></script>
+	<script src="./developed.js" type="module"></script>
+</body>
+</html>

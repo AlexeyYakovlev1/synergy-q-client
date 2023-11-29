@@ -1,0 +1,91 @@
+.disc-custom-select,
+.faculty-custom-select {
+	cursor: pointer;
+	position: relative;
+	/* width: 200px; */
+	padding: 10px;
+	background-color: var(--red);;
+	color: white;
+	user-select: none;
+	border-radius: 12px;
+	font-size: 15px;
+	text-align: center;
+}
+
+.faculty-custom-select__description,
+.disc-custom-select__description {
+	position: absolute;
+	top: -20px;
+	left: 10px;
+	color: black;
+}
+
+.disc-select-selected,
+.faculty-select-selected {
+	display: flex;
+	gap: 0 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 200px;
+}
+
+.disc-select-selected span,
+.faculty-select-selected span {
+	max-width: 200px;
+	overflow: hidden;
+	display: inline-block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.disc-select-options,
+.faculty-select-options {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	height: 150px;
+	z-index: 99;
+	height: 200px;
+	overflow: auto;
+}
+
+.faculty-select-options {
+	display: flex;
+	flex-direction: column;
+}
+
+.faculty-select-arrow,
+.disc-select-arrow {
+	transition: .2s ease;
+}
+
+.faculty-select-arrow.rotate,
+.disc-select-arrow.rotate {
+	transform: rotate(180deg);
+}
+
+.disc-select-option {
+	width: 200px;
+}
+
+.disc-select-option,
+.faculty-select-option {
+	padding: 10px;
+	background-color: white;
+	margin-top: 5px;
+	cursor: pointer;
+	background-color: var(--red);
+	color: white;
+	border-radius: 12px;
+	overflow: hidden;
+	display: inline-block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.disc-select-option:hover,
+.faculty-select-option:hover {
+	opacity: .7;
+}
