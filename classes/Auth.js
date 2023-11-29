@@ -6,7 +6,7 @@ import Utils from "./Utils.js";
 
 class Auth {
 	constructor() {
-		this.url = "http://localhost:4500/auth";
+		this.url = "http://10.0.2.15/auth";
 	}
 
 	getBody(inputSelector) {

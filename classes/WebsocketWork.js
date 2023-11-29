@@ -10,8 +10,7 @@ const { UPLOAD_TO_EXCEL, GENERATE_QUESTIONS, ONE_QUESTION } = data.requests;
 class WebsocketWork {
 	constructor() {
 		this._allowedTypes = data.requests;
-		this.websocket = new WebSocket("ws://localhost:8831");
-		// this.websocket = new WebSocket("ws://10.12.105.98");
+		this.websocket = new WebSocket("ws://10.12.105.98");
 		this.USER_REQUEST = data.USER_REQUEST
 	}
 
